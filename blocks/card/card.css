@@ -1,0 +1,12 @@
+.card {
+  height: 361px;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: auto 62px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
