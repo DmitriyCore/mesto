@@ -1,0 +1,18 @@
+.profile {
+  width: 282px;
+  margin: 0px auto 36px;
+  padding: 0px;
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .profile {
+    width: 880px;
+    margin: 0px auto 51px;
+    grid-template-rows: auto;
+    grid-template-columns: 150px auto 150px;
+  }
+}

@@ -1,0 +1,20 @@
+.header {
+  max-width: 320px;
+  margin: 0px auto 42px;
+  padding: 28px 0px 0px;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  border-bottom: 1px solid #545454b3;
+  transition: max-width .4s ease-in-out;
+  transition: margin .4s ease-in-out;
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    max-width: 879px;
+    margin: 0px auto 40px;
+    padding: 45px 0px 0px;
+  }
+}
