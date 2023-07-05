@@ -1,17 +1,20 @@
 .profile {
-  width: 282px;
+  max-width: 282px;
   margin: 0px auto 36px;
   padding: 0px;
+  box-sizing: border-box;
   display: grid;
   position: relative;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: auto;
+  transition: all 0.8s ease 0s;
 }
 
 @media screen and (min-width: 1280px) {
   .profile {
-    width: 880px;
-    margin: 0px auto 51px;
+    max-width: 880px;
+    width: 100%;
+    margin: 0px 0px 51px;
     grid-template-rows: auto;
     grid-template-columns: 150px auto 150px;
   }

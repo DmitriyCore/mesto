@@ -1,6 +1,5 @@
-.profile-info__about {
+.profile-info__job {
   max-width: 282px;
-  height: 14px;
   margin: 0px;
   padding: 0px;
   grid-column-start: 1;
@@ -14,12 +13,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1280px) {
-  .profile-info__about {
+  .profile-info__job {
     max-width: 336px;
-    height: 18px;
     grid-column-start: 1;
     grid-column-end: 2;
     justify-self: start;

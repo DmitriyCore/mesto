@@ -2,13 +2,19 @@
   max-width: 320px;
   margin: 0px auto 42px;
   padding: 28px 0px 0px;
+  box-sizing: border-box;
   display: grid;
   position: relative;
   grid-template-rows: auto;
   grid-template-columns: auto;
   border-bottom: 1px solid #545454b3;
-  transition: max-width .4s ease-in-out;
-  transition: margin .4s ease-in-out;
+  transition: all 0.8s ease 0s;
+}
+
+@media screen and (min-width: 615px) {
+  .header {
+    max-width: 615px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
