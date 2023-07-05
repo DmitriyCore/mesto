@@ -3,6 +3,7 @@
   height: 18px;
   margin: 8px 19px 0px 0px;
   padding: 0px;
+  box-sizing: border-box;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -10,10 +11,16 @@
   justify-self: end;
   border: 1px solid #FFFFFF;
   background-color: #000000;
-  background-image: url(../../../images/profile-edit-button.svg);
-  background-position: center;
+  background-image: url(../../../images/button-edit.svg);
   background-size: 7.5px 7.5px;
   background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.8s ease 0s;
+}
+
+.profile-info__edit-button:hover {
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 1280px) {

@@ -1,7 +1,9 @@
 .card {
+  width: 282px;
   height: 361px;
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   display: grid;
   position: relative;
   grid-template-rows: repeat(2, auto);

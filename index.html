@@ -14,8 +14,8 @@
 
     <!-- Блок "header" -->
 
-    <header class="header">
-      <img class="header__logo" src="./images/header-logo.svg" alt="Логотип сайта">
+    <header id="header" class="header">
+      <div class="header__logo"></div>
     </header>
 
     <!-- Блок "content" -->
@@ -25,10 +25,10 @@
       <!-- Блок "Profile" -->
 
       <section class="profile">
-        <img class="profile__avatar" src="./images/cousteau.jpg">
+        <img class="profile__avatar" src="./images/cousteau.jpg" alt="Фотография профиля">
         <div class="profile-info">
           <div class="profile-info__name">Жак-Ив Кусто</div>
-          <div class="profile-info__about">Исследователь океана</div>
+          <div class="profile-info__job">Исследователь океана</div>
           <button class="profile-info__edit-button"></button>
         </div>
         <button class="profile__add-button"></button>
@@ -39,32 +39,32 @@
       <section class="cards">
         <article class="card">
           <img class="card__image" src="./images/karachaevsk.jpg" alt="Фотография природы Карачаевска">
-          <h2 class="card__title">Карачаевск</h2>
+          <h1 class="card__title">Карачаевск</h1>
           <button class="card__like-button"></button>
         </article>
         <article class="card">
           <img class="card__image" src="./images/elbrus.jpg" alt="Фотография горы Эльбрус">
-          <h2 class="card__title">Гора Эльбрус</h2>
+          <h1 class="card__title">Гора Эльбрус</h1>
           <button class="card__like-button"></button>
         </article>
         <article class="card">
           <img class="card__image" src="./images/dombai.jpg" alt="Фотография гор Домбая">
-          <h2 class="card__title">Домбай</h2>
+          <h1 class="card__title">Домбай</h1>
           <button class="card__like-button"></button>
         </article>
         <article class="card">
           <img class="card__image" src="./images/baikal.jpg" alt="Фотография природы Байкала">
-          <h2 class="card__title">Байкал</h2>
+          <h1 class="card__title">Байкал</h1>
           <button class="card__like-button"></button>
         </article>
         <article class="card">
           <img class="card__image" src="./images/k2.jpg" alt="Фотография горы К2">
-          <h2 class="card__title">Гора К2</h2>
+          <h1 class="card__title">Гора К2</h1>
           <button class="card__like-button"></button>
         </article>
         <article class="card">
           <img class="card__image" src="./images/kamchatka.jpg" alt="Фотография природы Камчатки">
-          <h2 class="card__title">Камчатка</h2>
+          <h1 class="card__title">Камчатка</h1>
           <button class="card__like-button"></button>
         </article>
       </section>
@@ -76,4 +76,21 @@
       <h2 class="footer__copyright">© 2020 Mesto Russia</h2>
     </footer>
   </div>
+
+  <!-- Блок "popup" -->
+
+  <div class="popup popup_type_edit">
+    <div class="popup__container">
+      <button class="popup__close"></button>
+      <h1 class="popup__title">Редактировать профиль</h1>
+      <input type="text" class="popup__name"></input>
+      <input type="text" class="popup__job"></input>
+      <button class="popup__submit">Сохранить</button>
+    </div>
+  </div>
+  
+  <!-- Блок "script" -->
+  
+  <script src="./scripts/index.js"></script>
+
 </body>
