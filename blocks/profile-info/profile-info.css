@@ -1,0 +1,32 @@
+.profile-info {
+  min-width: 282px;
+  min-height: 54px;
+  margin: 0px 0px 34px;
+  padding: 0px;
+  box-sizing: border-box;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+  transition: all 0.8s ease 0s;
+}
+
+@media screen and (min-width: 1280px) {
+  .profile-info {
+    min-width: 336px;
+    min-height: 73px;
+    margin: 0px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+    align-self: center;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 294px calc(336px - 294px) auto;
+  }
+}
