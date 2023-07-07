@@ -1,11 +1,14 @@
 /* Свойства поумолчанию для страницы */
 
 @import url(../vendor/normalize.css);
-@import url(../blocks/page/page.css);
 
 /* Шрифты */
 
 @import url(../fonts/fonts.css);
+
+/* Блок "page" */
+
+@import url(../blocks/page/page.css);
 
 /* Блок "header" */
 
@@ -20,11 +23,11 @@
 
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
-@import url(../blocks/profile/__add-button/profile__add-button.css);
-@import url(../blocks/profile-info/profile-info.css);
-@import url(../blocks/profile-info/__name/profile-info__name.css);
-@import url(../blocks/profile-info/__job/profile-info__job.css);
-@import url(../blocks/profile-info/__edit-button/profile-info__edit-button.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__job/profile__job.css);
+@import url(../blocks/profile/__edit/profile__edit.css);
+@import url(../blocks/profile/__add/profile__add.css);
 
 /* Блок "cards" */
 
@@ -32,7 +35,7 @@
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__image/card__image.css);
 @import url(../blocks/card/__title/card__title.css);
-@import url(../blocks/card/__like-button/card__like-button.css);
+@import url(../blocks/card/__like/card__like.css);
 
 /* Блок "footer" */
 
@@ -44,8 +47,9 @@
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__name/popup__name.css);
-@import url(../blocks/popup/__job/popup__job.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__input/_type_name/popup__input_type_name.css);
+@import url(../blocks/popup/__input/_type_job/popup__input_type_job.css);
 @import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/__submit/popup__submit.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
