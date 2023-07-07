@@ -1,7 +1,6 @@
-.profile-info__name {
+.profile__name {
   max-width: 189px;
-  height: calc(26px + 14px);
-  margin: 0px;
+  margin: 0px 0px 7px;
   padding: 0px;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -9,7 +8,6 @@
   grid-row-end: 2;
   justify-self: center;
   color: #FFFFFF;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 27px;
@@ -20,11 +18,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .profile-info__name {
+  .profile__name {
     max-width: 294px;
-    height: calc(39px + 16px);
-    margin: 0px;
-    grid-column-start: 1;
     grid-column-end: 2;
     justify-self: start;
     font-size: 42px;

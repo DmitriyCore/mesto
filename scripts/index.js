@@ -1,29 +1,58 @@
-const edit = document.querySelector('.profile-info__edit-button');
+/* Попап Edit и форма содержащая поля ввода */
+
 const popupEdit = document.querySelector('.popup_type_edit');
-const popupClose = popupEdit.querySelector('.popup__close');
-const popupSubmit = popupEdit.querySelector('.popup__submit');
+const formElement = document.querySelector('form');
 
-let formElement = document.querySelector('.popup__container');
-let nameInput = formElement.querySelector('.popup__name');
-let jobInput = formElement.querySelector('.popup__job');
-let nameField = document.querySelector('.profile-info__name');
-let jobField = document.querySelector('.profile-info__job');
+/* Проверка на наличие класса "popup_opened" */
 
-edit.addEventListener('click', togglePopup);
-popupClose.addEventListener('click', togglePopup);
-popupSubmit.addEventListener('click', handleFormSubmit);
+let isHidden = popupEdit.classList.contains('popup_opened');
 
-function togglePopup() {
+/* Переменные для полей ввода формы */
+
+let nameInput = formElement.querySelector('.popup__input_type_name');
+let jobInput = formElement.querySelector('.popup__input_type_job');
+
+/* Переменные для полей профиля */
+
+let nameField = document.querySelector('.profile__name');
+let jobField = document.querySelector('.profile__job');
+
+/* Нажатие на кнопку Edit */
+
+const buttonEdit = document.querySelector('.profile__edit');
+buttonEdit.addEventListener('click', popupOpen);
+
+/* Нажатие на кнопку Close */
+
+const buttonClose = popupEdit.querySelector('.popup__close');
+buttonClose.addEventListener('click', popupClose);
+
+/* Нажатие на кнопку Submit */
+
+const buttonSubmit = popupEdit.querySelector('.popup__submit');
+buttonSubmit.addEventListener('click', handleFormSubmit);
+
+/* Функция открытия формы */
+
+function popupOpen () {
+  if (isHidden == false) {
+    popupEdit.classList.toggle('popup_opened');
+    nameInput.value = nameField.textContent;
+    jobInput.value = jobField.textContent;
+  }
+}
+
+/* Функция закрытия формы */
+
+function popupClose () {
   popupEdit.classList.toggle('popup_opened');
-  nameInput.value = nameField.textContent;
-  jobInput.value = jobField.textContent;
-  console.log(`Имя: ${nameInput.value} | Работа: ${jobInput.value}.`);
-};
+}
+
+/* Функция отправки формы */
 
 function handleFormSubmit (evt) {
-  evt.preventDefault('popup__submit');
-  popupEdit.classList.toggle('popup_opened');
+  evt.preventDefault();
+  popupClose ();
   nameField.textContent = nameInput.value;
   jobField.textContent = jobInput.value;
-  console.log(`Имя: ${nameField.textContent} | Работа: ${jobField.textContent}.`);
 };

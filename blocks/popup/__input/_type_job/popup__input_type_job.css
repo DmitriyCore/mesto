@@ -1,0 +1,11 @@
+.popup__input_type_job {
+  margin: 0px 0px 45px;
+  justify-content: start;
+  transition: all 0.8s ease 0s;
+}
+
+@media screen and (min-width: 615px) {
+  .popup__input_type_job {
+    margin: 0px 0px 48px;
+  }
+}

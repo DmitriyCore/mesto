@@ -8,11 +8,10 @@
   border: none;
   border-radius: 2px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 1);
   background-position: 50% 50%;
   outline: none;
   font-size: 14px;
-  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -21,7 +20,7 @@
 }
 
 .popup__submit:hover {
-  opacity: 0.800000011920929;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (min-width: 615px) {
