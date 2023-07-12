@@ -8,9 +8,6 @@
   font-weight: 900;
   line-height: normal;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  transition: all 0.8s ease 0s;
 }
 
 @media screen and (min-width: 615px) {

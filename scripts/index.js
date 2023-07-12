@@ -25,7 +25,7 @@ buttonClose.addEventListener('click', popupClose);
 
 /* Нажатие на кнопку Submit */
 
-document.addEventListener('submit', popupSubmit);
+form.addEventListener('submit', popupSubmit);
 
 /* Функция открытия формы */
 
